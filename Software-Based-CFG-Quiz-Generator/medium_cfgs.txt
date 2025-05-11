@@ -1,0 +1,33 @@
+START S
+RULES 3
+S -> S aSd T
+S' -> S' S
+T -> T bTc empty
+END
+START S
+RULES 4
+A -> A aA a
+B -> B bB b
+S -> S AA AB BA BB empty
+S' -> S' S
+END
+START S
+RULES 2
+S -> S aSb aS SS a
+S' -> S' S
+END
+START S
+RULES 2
+S -> S aSb cSd SS empty
+S' -> S' S
+END
+START S
+RULES 2
+S -> S aSb bSa SS empty
+S' -> S' S
+END
+START S
+RULES 2
+S -> S aSa dSd bS cS empty
+S' -> S' S
+END

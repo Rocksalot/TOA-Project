@@ -1,0 +1,26 @@
+START S
+RULES 4
+A -> A aAb aB bA empty
+B -> B cBd c dB empty
+S -> S AB
+S' -> S' S
+END
+START S
+RULES 5
+S -> S X Y
+S' -> S' S
+X -> X aXc aZc
+Y -> Y bYd bZd
+Z -> Z aZc bZd empty
+END
+START S
+RULES 2
+S -> S aSbScSd empty
+S' -> S' S
+END
+START S
+RULES 3
+A -> A aAb S empty
+S -> S cAd
+S' -> S' S
+END

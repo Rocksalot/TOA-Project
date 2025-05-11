@@ -1,0 +1,38 @@
+START S
+RULES 3
+A -> A aAc empty
+B -> B bBd empty
+S -> S AB
+END
+START S
+RULES 1
+S -> S aSb empty
+END
+START S
+RULES 1
+S -> S aSa bSb cSc dSd empty
+END
+START S
+RULES 2
+B -> B bS
+S -> S aB bS cS dS empty
+END
+START S
+RULES 2
+A -> A bA dA empty
+S -> S aSd A
+END
+START S
+RULES 2
+B -> B cBd empty
+S -> S aSb B
+END
+START S
+RULES 2
+B -> B bB cB empty
+S -> S aSd B
+END
+START S
+RULES 1
+S -> S aSb cSd empty
+END
